@@ -1,0 +1,10 @@
+\begin{tabular}{lrr}
+\toprule
+Dataset &  LGBMClassifier &    MLP \\
+\midrule
+RetailHero &           277.2 &  452.3 \\
+Hillstrom  &           215.4 &  203.8 \\
+Kuusito    &            42.1 &   94.1 \\
+Synthetic  &             2.2 &   16.9 \\
+\bottomrule
+\end{tabular}
