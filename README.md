@@ -36,4 +36,11 @@ Forest approach on various data sets using uplift at k metric
 
 ## Results
 
-TBD
+We compared Meta-Learners implemented in different libraries with each other and Meta-Learners with tree-based approach. 
+
+- From the comparison, we can conclude that the CausalML, Sklift and EconML libraries have equivalent implementations of Meta-Learners. 
+- Among the Meta-Learners and trees, it is difficult to determine the best model. The choice of the algorithm depends on the data. 
+- We also found that a fully connected network as a base model for Meta-Learners does not provide a significant benefit compared to boosting. 
+- However, we reproduced a more complex architecture of the neural network presented in  [SMITE](https://arxiv.org/abs/2011.00041) which shows significantly better results. 
+- We also reproduced a promising ["Reinforcement learning for uplift modeling"](https://arxiv.org/abs/1811.10158) approach and obtained a SN-UMG of 0.83 on a Synthetic dataset. 
+-As a future work, we plan to evaluate the RL approach more objectively and make the SMITE architecture more generic for different data.
