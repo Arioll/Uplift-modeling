@@ -6,9 +6,9 @@ The repository contains reproducible source code for comparison of classical and
 
 ## Description
 
-Uplift modeling is a new machine learning approach that allows you to evaluate the effect of a treatment and optimize the effectiveness of marketing campaigns, individual offers, or personalized medicine. The uplift modeling is used to determine the user groups that will be most affected by the campaign treatment and the groups that do not need to be affected.
+Uplift modeling is a new machine learning approach that allow to evaluate the effect of a treatment and optimize the effectiveness of marketing campaigns, individual offers, or personalized medicine. The uplift modeling is used to determine the user groups that will be most affected by the campaign treatment and the groups that do not need to be affected.
 
-In this project, we review standard approaches to uplift modeling, as well as completely new and innovative ones. We compare existing libraries in this field and reproduce the results of two state-of-the-art articles and suggest improvements. We evaluate the performance of the reviewed models using both synthetic and real data.
+In this project, we review standard approaches to uplift modeling, as well as completely new and innovative ones. We compare existing libraries in this field, reproduce the results of two state-of-the-art articles and suggest improvements. We evaluate the performance of the reviewed models using both synthetic and real data.
 
 ## Prerequisites
 
@@ -36,9 +36,7 @@ Forest approach on various data sets using uplift at k metric
 
 ## Results
 
-We compared Meta-Learners implemented in different libraries with each other and Meta-Learners with tree-based approach. 
-
-- From the comparison, we can conclude that the CausalML, Sklift and EconML libraries have equivalent implementations of Meta-Learners. 
+- We compared Meta-Learners implemented in different libraries with each other and Meta-Learners with tree-based approach. From the comparison, we can conclude that the CausalML, Sklift and EconML libraries have equivalent implementations of Meta-Learners. 
 - Among the Meta-Learners and trees, it is difficult to determine the best model. The choice of the algorithm depends on the data. 
 - We also found that a fully connected network as a base model for Meta-Learners does not provide a significant benefit compared to boosting. 
 - However, we reproduced a more complex architecture of the neural network presented in  [SMITE](https://arxiv.org/abs/2011.00041) which shows significantly better results. 
